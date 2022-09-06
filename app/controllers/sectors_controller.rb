@@ -3,7 +3,7 @@ class SectorsController < ApplicationController
 
   # GET /sectors or /sectors.json
   def index
-    @sectors = Sector.all
+    @sectors = Sector.order(:name)
   end
 
   # GET /sectors/1 or /sectors/1.json
@@ -13,6 +13,9 @@ class SectorsController < ApplicationController
   # GET /sectors/new
   def new
     @sector = Sector.new
+    @random_sector = SectorMaker::Sector.new
+    @data = @random_sector.to_s
+    @svg = @random_sector.export_as.body
   end
 
   # GET /sectors/1/edit

@@ -57,18 +57,34 @@ p {
   content: var(--theme-name);
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+textarea {
+  width: 600px;
+  height: 600px;
+}
+
+.map {
+  width: 800px;
+  height:800px;
+  overflow:scroll;
+}
+
+/* SECTOR MAP */
+
 /* FOOTER */
 
 footer {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  bottom: 0;
   width: 100%;
-  padding: 10px;
-  font-size: 20px;
-  color: var(--base1);
+  background-color: red;
+  color: white;
+  text-align: center;
 }

@@ -1,9 +1,10 @@
-<h1>New sector</h1>
-
-<%= render "form", sector: @sector %>
-
-<br>
-
-<div>
-  <%= link_to "Back to sectors", sectors_path %>
+<div class="wrapper">
+  <div>
+    <%= render "form", sector: @sector %>
+    <%= link_to "Back to sectors", sectors_path %>
+  </div>
+  <div class="map">
+    <img src="<%= @svg %>" alt="A sector map"/>
+  </div>
 </div>
+

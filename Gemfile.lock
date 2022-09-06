@@ -91,6 +91,10 @@ GEM
       reline (>= 0.3.1)
     digest (3.1.0)
     erubi (1.11.0)
+    faraday (2.5.2)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.0)
     ffi (1.15.5)
     formatador (1.1.0)
     globalid (1.0.0)
@@ -212,6 +216,7 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.5)
     ruby-progressbar (1.11.0)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -272,6 +277,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  faraday
   guard
   guard-minitest
   importmap-rails

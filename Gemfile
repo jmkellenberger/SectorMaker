@@ -12,6 +12,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem "puma"
 gem "bootsnap", require: false
+gem "faraday"
 
 group :development, :test do
   gem "sqlite3", "1.4.2"

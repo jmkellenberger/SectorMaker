@@ -13,12 +13,12 @@
 
   <div>
     <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, :value => "Random Sector" %>
   </div>
 
   <div>
     <%= form.label :data, style: "display: block" %>
-    <%= form.text_area :data %>
+    <%= form.text_area :data, :value => @data %>
   </div>
 
   <div>
