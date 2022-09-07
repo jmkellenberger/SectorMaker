@@ -12,7 +12,7 @@ module SectorMaker
       @sector_name = "New Sector"
       @system_chances = system_chance
       @hexes = {}
-      generate_sector
+      generate_systems
     end
 
     def to_s
@@ -33,13 +33,9 @@ module SectorMaker
       end
     end
 
-    def generate_sector
-      1.upto(32) do |col|
-        1.upto(40) do |row|
-          hex = [col, row]
-          world = check_system_presence(hex)
-          @hexes[hex] = world
-        end
+    def generate_systems
+      [*(1..32)].product([*(1..40)]).each do |hex|
+        @hexes[hex] = check_system_presence(hex)
       end
     end
 

@@ -11,11 +11,9 @@ module SectorMaker
       Array.new(dice_quantity) { rand(1..6) }.sum
     end
 
-    # rubocop:disable Lint/BinaryOperatorWithIdenticalOperands
     def flux
       roll - roll
     end
-    # rubocop:enable Lint/BinaryOperatorWithIdenticalOperands
 
     def roll_over?(target = 8, dice: 2)
       roll(dice) >= target

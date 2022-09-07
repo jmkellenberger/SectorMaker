@@ -4,7 +4,10 @@
 
 <div id="sectors">
   <% @sectors.each do |sector| %>
-    <%= render sector %>
+    <p>
+      <strong>Name:</strong>
+      <%= sector.name %>
+    </p>
     <p>
       <%= link_to "Show this sector", sector %>
     </p>

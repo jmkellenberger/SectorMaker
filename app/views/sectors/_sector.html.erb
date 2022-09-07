@@ -6,7 +6,8 @@
 
   <p>
     <strong>Data:</strong>
-    <%= sector.data %>
+    <% sector.data.split("\n").each do |hex| %>
+      <p> <%= hex %> </p>
+    <% end %>
   </p>
-
 </div>

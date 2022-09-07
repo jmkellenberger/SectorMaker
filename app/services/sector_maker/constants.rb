@@ -13,7 +13,6 @@ module SectorMaker
 
     DEFAULT_HEADER = { "Content-Type" => "text/plain" }.freeze
     DEFAULT_PARAMS = { scale: "128",
-                      # accept: "application/pdf",
                       options: "25591",
                       style: "poster",
                       datauri: "1" }.freeze
@@ -39,8 +38,6 @@ module SectorMaker
                         E F G H
                         I J K L
                         M N O P].freeze
-
-    # COORDINATE_RANGE = 
 
     DEFAULT_SYSTEM_PRESENCE = { A: 5, B: 5, C: 5, D: 5,
                                 E: 5, F: 5, G: 5, H: 5,
